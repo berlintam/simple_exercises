@@ -15,16 +15,14 @@ i = 0
 
 until @number == secret_number
   prompt
+  tries.push(i)
+  i += 1
   if @number > secret_number
-    tries.push(i)
-    i += 1
     puts "Too big!"
   elsif @number < secret_number
-    tries.push(i)
-    i += 1
     puts "Too small!"
   else @number == secret_number
-    puts "You got it! It took you #{tries.count + 1} tries!"
+    puts "You got it! It took you #{tries.count} tries!"
   end
 end
 

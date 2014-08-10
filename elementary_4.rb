@@ -11,6 +11,8 @@ def sum_of_all_numbers(number)
     i += 1
   end
 
+  puts numbers
+  puts '-----'
   puts numbers.inject(:+)
 
 end

@@ -19,7 +19,7 @@ def sum_of_all_numbers(number)
     end
   end
 
-  puts divisible_numbers.inject(:+)
+  puts "#{divisible_numbers} = #{divisible_numbers.inject(:+)}"
 
 end
 
